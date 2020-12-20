@@ -1,18 +1,15 @@
 import React, {Component} from 'react';
-import {Router} from 'react-router-dom';
+import {Switch, Router} from 'react-router-dom';
 import Home from './components/Home';
-//import Header from './componets/Header';
-import './App.css';
+//import Header from './components/Header';
+//import './App.css';
 
-class App extends Component {
-  render(){
-  return (
+function App(){
+  return(
     <div className="App">
-        <Router path="/"component={Home}/>
-    
+         <Router path="/" component={Home}/>
     </div>
-  );
-  }
+  ); 
 }
 
 export default App;
